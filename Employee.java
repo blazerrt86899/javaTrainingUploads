@@ -1,58 +1,43 @@
 /*Author: Romu Tiwari
- *Day: 06/01/2020
- *Creation Time: 12.30pm
+ *Day: 08/01/2020
+ *Creation Time: 12:00pm
  *Employee Id: 844549
- *DESC: Created Getter and Setters for Employee Class
+ *DESC: Inheritance Demo using constructor calls
  * */
-//Employee POJO Class
-package com.cts;
+package javaDay2;
 
-//POJO -plain old java object
 public class Employee {
-//	all variables should be private
-//	should have a no arg cons
-//	getter and setter for all private variable
 	
-	private int empId;
-	private String empName;
-	private String empAdd;
-	private static String companyName;
+	int empId;
+	String compName;
+	String name;
+	String dept;
 	
+	
+	
+	@Override
+	public String toString() {
+		return "Employee [empId=" + empId + ", compName=" + compName + ", name=" + name + ", dept=" + dept + "]";
+	}
+
 	public Employee() {
 		
 	}
 	
-	public String getcompanyName() {
-		return companyName;
+	public Employee(int id,String name,String comp,String dept2) {
+		
+		this.empId = id;
+		this.compName = name;
+		this.name = name;
+		this.dept = dept2;
 	}
 	
-	public void setcompanyName(String companyName) {
-		Employee.companyName = companyName;
+	public void work() {
+		System.out.println("Working");
 	}
 	
-	public int getEmpId() {
-		return empId;
-	}
-	public void setEmpId(int empId) {
-		this.empId = empId;
-	}
-	public String getEmpName() {
-		return empName;
-	}
-	public void setEmpName(String empName) {
-		this.empName = empName;
-	}
-	public String getEmpAdd() {
-		return empAdd;
-	}
-	public void setEmpAdd(String empAdd) {
-		this.empAdd = empAdd;
-	}
-	
-	public Employee(int empId,String empName,String empAdd) {
-		this.empAdd = empAdd;
-		this.empId = empId;
-		this.empName = empName;
+	public void checkProfile() {
+		System.out.println("check profile");
 	}
 
 }
