@@ -6,14 +6,14 @@
  * */
 package javaDay3;
 
-public class Admin extends Employee{
+public class Trainer extends Employee{
 	
 	public void work() {
-		System.out.println("Admin - works");
+		System.out.println("Trainer - works");
 	}
 	
-	public void manageProjects() {
-		System.out.println("Managing Inventory ");
+	public void upskilling() {
+		System.out.println("Upskilling");
 	}
 
 

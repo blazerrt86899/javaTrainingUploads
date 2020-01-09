@@ -1,22 +1,19 @@
-
 /*Author: Romu Tiwari
- *Day: 08/01/2020
+ *Day: 09/01/2020
  *Creation Time: 12:00pm
  *Employee Id: 844549
- *DESC: Inheritance Demo using constructor calls
+ *DESC: Polymorphism Implementation
  * */
-package javaDay2;
+package javaDay3;
 
 public class Manager extends Employee{
 	
-	public Manager() {
-		
+	public void work() {
+		System.out.println("Manager - works");
 	}
 	
-	public Manager(int id,String name,String comp,String dept) {
-		super(id,name,comp,dept);
-		System.out.println("Object of Manager created");
-		
+	public void manageInventory() {
+		System.out.println("Managing Projects");
 	}
 
 }
